@@ -1,0 +1,269 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 24px;
+}
+
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    padding-top: 12px;
+    margin-bottom: -5px;
+}
+
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* CABEÇALHO */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo_wiki {
+    display: flex;
+    margin: 8px;
+}
+
+.bar {
+    background-color: #f9f9fb;
+    padding:15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+.search_box {
+    display: flex;
+}
+
+#search_input {
+    width: 300px;
+    height: 28px;
+    border: 1px solid black;
+}
+
+#search_button {
+    width: 100px;
+    height: 32px;
+    border: 1px solid black;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    margin-right: 24px;
+}
+
+.login p {
+    margin-right: 24px;
+    font-size: 14px;
+    color: rgb(93, 93, 255);
+}
+
+.login p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* MENU LATERAL */
+
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+    line-height: 32px;
+}
+
+.title-serie hr {
+    margin-top: -1px;
+}
+
+.menu-list { 
+    list-style: none;
+    padding-left: 0px;
+}
+
+a {
+    color:blue;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sidebar li a:hover {
+    color: rgb(93, 93, 255);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+
+.page-title {
+    font-style: italic;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+.nav_sup {
+    display: block;
+    flex-direction: row;
+    margin-bottom: -2px;
+}
+
+.artigo {
+    color: #202122;
+    border-bottom: 2px solid;
+    padding: 12px 0 7px 0;
+    margin-bottom: -1px;
+    margin-right: 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.discussao:hover {
+    color: #202122;
+    border-bottom: 2px solid;
+    padding: 12px 0 7px 0;
+    margin-bottom: -1px;
+    position: relative;
+    cursor: pointer;
+}
+
+.main {
+    margin-bottom: 32px;
+}
+
+.section {
+    font-family: serif;
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 2px;
+}
+
+blockquote {
+    background-color: rgb(225, 225, 225);
+    padding: 8px 32px;
+    border-left: 5px solid #c8ccd1;
+    line-height: 24px;
+}
+
+span {
+    font-style: italic;
+}
+
+.cast {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 0.5px solid black;
+    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
+    padding: 4px;
+    background-color: #F8F9FA;
+}
+
+figcaption {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+/* RODAPÉ */
+
+.footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+    padding: 24px 64px 64px 128px;
+    font-size: 12px;
+}
+
+.links-footer {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+
+
+/* ÂNCORAS */
+
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 24px;
+    line-height: 32px;
+}
+
+.subsections {
+    padding-left: 8px;
+}
+
+.subsections li a {
+    font-size: 12px;
+}
+
+.anchors li a:hover {
+    color: rgb(93, 93, 255);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+/* OTH */
+
+.episodes {
+    display: flex;
+    flex-direction: row;
+    margin-left: 24px;
+}
+
+.episodes a {
+    margin-left: 2px;
+    font-style: italic;
+}
+
+.character_list {
+    padding-left: 16px;
+}
+
+.character_list li {
+    padding-bottom: 8px;
+}
+
+.hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
